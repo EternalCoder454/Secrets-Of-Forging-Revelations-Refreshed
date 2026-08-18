@@ -1,5 +1,5 @@
 {
-    "replace": true,
+    "replace": false,
     "slots": [ "sword/guard" ],
     "type": "tetra:basic_module",
     "renderLayer": "higher",
