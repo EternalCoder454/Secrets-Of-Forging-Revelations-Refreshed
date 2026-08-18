@@ -20,8 +20,41 @@ about Tetra itself.
 
 ## State
 
-Builds and loads clean beside Tetra Refreshed and Mutil Refreshed, with no errors of its own. What
-has not happened is play. No polearm has been crafted, thrown, or looked at.
+**Ace granted permission on 2026-08-18 on Discord**, for this and for Art of Forging, asking that
+they stay separate projects included in Tetra rather than flattened into it, the way Create bundles
+Flywheel, and that he be credited as a contributor as well as in the README.
+
+**So this is bundled, not merged.** It stays its own repository and its own mod id. It publishes to
+mavenLocal, Tetra embeds it with jarJar, and NeoForge loads it from inside Tetra's jar:
+
+```
+secrets_of_forging_revelations (jar(mods/tetra-26.1.2-6.13.0.jar > secrets_of_forging_revelations-26.1.2-1.3.5.jar))
+```
+
+Build order is mutil, then Tetra published to mavenLocal, then this, then Tetra again to embed it.
+
+### Reaching into Tetra from this side
+
+Tetra's own source is untouched. Everything this adds to Tetra's screens is done from here:
+
+| What | How |
+|---|---|
+| The polearm in Tetra's creative tab | match `BuildCreativeModeTabContentsEvent.getTabKey()` against `tetra:default`, built by id because Tetra's holder for it is private |
+| Its holosphere entry | `assets/tetra/holosphere_entries/polearm.json`, position 3, which was the one gap in Tetra's ordering |
+| The three effect bars | `assets/tetra/stat_bars/*.json` rather than java `addBar` calls, which also puts them in the holosphere where they never appeared |
+
+Both of Tetra's stores filter to the `tetra` namespace, and this mod already shipped into
+`assets/tetra`, so no Tetra change is needed for any of it. `ClientSetup` existed only to add those
+bars in java and is gone. Effect ids stay under this mod's namespace, which is correct now that this
+is a separate project.
+
+A flat merge into Tetra's source was tried first and is parked on Tetra's `flat-merge-sofr` branch.
+It works and it is the wrong shape, so it is kept for the decisions rather than the files. One thing
+worth carrying over from it: **this mod's `glyphs.png` is a stale copy of Tetra's**, adding nothing
+and missing the glyph at x=112 y=224, so whichever mod wins load order decides whether that glyph
+draws. It should be deleted from here.
+
+What has still not happened is play. No polearm has been crafted, thrown, or looked at.
 
 ## What changed
 

@@ -1,0 +1,29 @@
+{
+    "type": "tetra:default",
+    "key": "tetra.stats.secrets_of_forging_revelations:blizzard",
+    "contexts": [ "tetra:workbench", "tetra:holosphere" ],
+    "min": 0,
+    "max": 30,
+    "stat": {
+        "type": "tetra:effect_level",
+        "effect": "secrets_of_forging_revelations:blizzard"
+    },
+    "label": {
+        "type": "tetra:basic",
+        "format": "integer",
+        "diff_format": "integer"
+    },
+    "tooltip": {
+        "type": "tetra:default",
+        "key": "tetra.stats.secrets_of_forging_revelations:blizzard.tooltip",
+        "stats": [
+            { "type": "tetra:effect_level", "effect": "secrets_of_forging_revelations:blizzard" },
+            { "type": "tetra:effect_efficiency", "effect": "secrets_of_forging_revelations:blizzard" }
+        ],
+        "formatters": [
+            { "type": "tetra:basic", "format": "integer" },
+            { "type": "tetra:basic", "format": "integer" }
+        ]
+    },
+    "generateSorter": true
+}

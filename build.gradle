@@ -190,3 +190,17 @@ processResources {
         }
     }
 }
+
+// Tetra Refreshed bundles this jar with jarJar, which resolves it by maven coordinate, so it has
+// to be publishable. Without an explicit publication the artifactId defaults to the project
+// directory name rather than the mod id.
+publishing {
+    publications {
+        register('mavenJava', MavenPublication) {
+            from components.java
+            groupId project.group
+            artifactId project.base.archivesName.get()
+            version project.version
+        }
+    }
+}
