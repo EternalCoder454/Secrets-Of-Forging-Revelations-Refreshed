@@ -4,6 +4,27 @@ A Tetra addon, created by Ace The Eldritch King
 
 This addon adds in a new modular item; the polearm, and adds in various custom modules, effects, and compatibility for Tetra: Enlarged.
 
+## This fork
+
+Ported to Minecraft 26.1.2 on NeoForge and Java 25, and **bundled inside
+[Tetra Refreshed](https://github.com/EternalCoder454/Tetra-Refreshed)** rather than installed
+separately. Ace gave permission for that on 2026-08-18, asking that it stay its own project included
+in the mod rather than folded into Tetra's source. It keeps its own mod id and loads as its own mod.
+
+The mod is Ace's. This fork carries the port and nothing more. Port by EternalHell.
+
+**Do not put this jar in your mods folder as well.** Tetra Refreshed carries it, and two copies both
+register `tetra:modular_polearm`, which fails to load.
+
+| File | Covers |
+|---|---|
+| [DEV.md](DEV.md) | building, and how this reaches into Tetra without Tetra knowing about it |
+| [PORT-STATUS.md](PORT-STATUS.md) | the port, and exactly what the licence below allows |
+| [CHANGELOG.md](CHANGELOG.md) | what a tester will notice, including the known gaps |
+| [PLAYTESTING.md](PLAYTESTING.md) | what to check before calling a build good |
+
+The terms below are Ace's and apply to this fork unchanged. Read them before using anything here.
+
 # Licensing
 
 While this project is under MIT license, as of 3-31-24, I the author have decided to put some restrictions on this project.
