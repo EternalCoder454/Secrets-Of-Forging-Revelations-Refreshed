@@ -8,7 +8,8 @@ This addon adds in a new modular item; the polearm, and adds in various custom m
 
 Ported to Minecraft 26.1.2 on NeoForge and Java 25, and **bundled inside
 [Tetra Refreshed](https://github.com/EternalCoder454/Tetra-Refreshed)** rather than installed
-separately. Ace gave permission for that on 2026-08-18, asking that it stay its own project included
+separately. Ace gave permission for that on 2026-08-18, recorded verbatim in
+[dev-permission.md](dev-permission.md), asking that it stay its own project included
 in the mod rather than folded into Tetra's source. It keeps its own mod id and loads as its own mod.
 
 The mod is Ace's. This fork carries the port and nothing more. Port by EternalHell.
