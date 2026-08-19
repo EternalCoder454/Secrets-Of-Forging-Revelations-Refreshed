@@ -63,5 +63,5 @@ __You May Not__
 |---|---|
 | [DEV.md](DEV.md) | building, and how this reaches into Tetra without Tetra knowing about it |
 | [PORT-STATUS.md](PORT-STATUS.md) | the port, and exactly what the licence above allows |
-| [CHANGELOG.md](CHANGELOG.md) | what a tester will notice, including the known gaps |
-| [PLAYTESTING.md](PLAYTESTING.md) | what to check before calling a build good |
+| [CHANGELOG.md](CHANGELOG.md) | what changed, per release |
+| [PLAYTESTING.md](PLAYTESTING.md) | a checklist for testing a build |
