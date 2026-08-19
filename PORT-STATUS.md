@@ -110,6 +110,14 @@ There are 58 references to the `art_of_forging` namespace. Tetra drops content i
 this is inert rather than broken, but it means the greatsword half of this mod does nothing until
 Art of Forging is ported too.
 
+## Known problems
+
+**Beheading is an effect, not an attribute.** `modules/polearm/scythe_head.json` listed
+`art_of_forging:beheading` in an `extract` block's `primaryAttributes` and `tertiaryAttributes`,
+where Tetra's attribute deserializer can only warn and drop it. Every sibling file here and in Art
+of Forging puts it under the matching effects block, so it moved there. It is an `ItemEffect` that
+Art of Forging registers, and it has never applied from this file.
+
 ## Building
 
 Tetra and mutil come from mavenLocal, so publish them first:

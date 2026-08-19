@@ -26,7 +26,13 @@
     ],
     "variants": [
         {
-            "materials": [ "tetra:wood/", "tetra:stone/", "tetra:metal/", "tetra:gem/", "tetra:bone/" ],
+            "materials": [
+                "tetra:wood/",
+                "tetra:stone/",
+                "tetra:metal/",
+                "tetra:gem/",
+                "tetra:bone/"
+            ],
             "key": "scythe_head/",
             "attributes": {
                 "generic.attack_damage": 1.3,
@@ -34,8 +40,14 @@
             },
             "effects": {
                 "sweeping": 3,
-                "severing": [ 1, 0.2 ],
-                "reap": [ 40, 0.5 ],
+                "severing": [
+                    1,
+                    0.2
+                ],
+                "reap": [
+                    40,
+                    0.5
+                ],
                 "art_of_forging:beheading": 15
             },
             "aspects": {
@@ -46,8 +58,7 @@
             "durability": 20,
             "extract": {
                 "primaryAttributes": {
-                    "generic.attack_damage": 1.2,
-                    "art_of_forging:beheading": 5
+                    "generic.attack_damage": 1.2
                 },
                 "secondaryAttributes": {
                     "generic.attack_damage": 0.3,
@@ -55,21 +66,28 @@
                 },
                 "tertiaryAttributes": {
                     "generic.attack_damage": -0.25,
-                    "generic.attack_speed": 0.25,
-                    "art_of_forging:beheading": -2
+                    "generic.attack_speed": 0.25
                 },
                 "primaryEffects": {
-                    "severing": [ 1, 0.1 ],
-                    "reap": 5
+                    "severing": [
+                        1,
+                        0.1
+                    ],
+                    "reap": 5,
+                    "art_of_forging:beheading": 5
                 },
                 "secondaryEffect": {
                     "sweeping": -1,
-                    "severing": [ 1, 0.05 ],
+                    "severing": [
+                        1,
+                        0.05
+                    ],
                     "reap": -5
                 },
                 "tertiaryEffects": {
                     "sweeping": 1,
-                    "reap": 5
+                    "reap": 5,
+                    "art_of_forging:beheading": -2
                 },
                 "durability": 0.65,
                 "integrity": -1,
@@ -78,7 +96,11 @@
                     "textureLocation": "tetra:textures/gui/sofr_glyph.png",
                     "textureX": 48
                 },
-                "availableTextures": [ "metal", "shiny", "crude" ],
+                "availableTextures": [
+                    "metal",
+                    "shiny",
+                    "crude"
+                ],
                 "models": [
                     {
                         "location": "tetra:item/module/polearm/head/scythe_head/"
