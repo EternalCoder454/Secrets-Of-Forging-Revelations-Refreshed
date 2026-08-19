@@ -49,12 +49,17 @@ public class SecretsOfForgingRevelations {
     }
 
     /**
-     * The polearm used to land in vanilla's Combat tab, where nothing named it and nothing listed it
-     * as craftable, which is why players did not find it. It belongs with the other modular items.
-     */
+      * Nothing is added to Tetra's tab.
+      *
+      * <p>A built polearm was, an iron spear, to make the item findable after it had spent the port
+      * in vanilla's Combat tab where nothing named it. The holosphere is where a modular item is
+      * meant to be found though, and it has an entry there, so the tab copy was a second answer to
+      * a question already answered, and it showed up in EMI as an item rather than as something to
+      * craft.
+      *
+      * <p>Kept as an empty listener rather than deleted, because this is where anything this mod
+      * wants in Tetra's tab goes.
+      */
     private void onBuildContents(BuildCreativeModeTabContentsEvent event) {
-        if (tetraTab.equals(event.getTabKey())) {
-            event.accept(ModularPolearm.setupPolearm());
-        }
     }
 }
