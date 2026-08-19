@@ -108,4 +108,4 @@ Work through [PLAYTESTING.md](PLAYTESTING.md) before calling a build good.
    only, never as author.
 3. `upstream` stays pointed at Ace's repository. Take future changes by rebasing onto it.
 4. Its terms live in the README rather than a licence file. Read them before publishing anything.
-5. No em dash and no double hyphen in prose, in any document here. Semicolons are fine, sparingly.
+5. Writing rules: run `python tools/check-writing-rules.py --rules`. Nothing else states them.
