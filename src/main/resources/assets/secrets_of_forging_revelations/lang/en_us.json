@@ -1,4 +1,5 @@
 {
+  "tetra.holo.craft.polearm": "Polearms",
   "effect.secrets_of_forging_revelations.freezing": "Frigid",
   "tetra.stats.secrets_of_forging_revelations:freezing": "Freezing",
   "tetra.stats.secrets_of_forging_revelations:freezing.tooltip": "Chills the target for §e%s§r seconds per hit, deepening up to §e%s§r times",
